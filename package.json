@@ -6,15 +6,28 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
+    "lint": "eslint --fix --ext .js,.vue src"
   },
   "dependencies": {
+    "@types/echarts": "^4.4.4",
+    "axios": "^0.19.2",
+    "babel-eslint": "^10.1.0",
     "core-js": "^3.6.4",
+    "echarts": "^4.7.0",
+    "md5": "^2.2.1",
+    "monaco-editor": "^0.19.0",
+    "monaco-editor-vue": "^1.0.9",
+    "monaco-editor-webpack-plugin": "^1.8.1",
+    "pug": "^2.0.4",
+    "reset.css": "^2.0.2",
+    "view-design": "^4.0.0",
     "vue": "^2.6.11",
-    "vue-class-component": "^7.2.2",
-    "vue-property-decorator": "^8.3.0",
+    "vue-class-component": "^7.2.3",
+    "vue-echarts": "^4.0.4",
+    "vue-property-decorator": "^8.4.1",
     "vue-router": "^3.1.5",
-    "vuex": "^3.1.2"
+    "vuex": "^3.1.2",
+    "vuex-class": "^0.3.2"
   },
   "devDependencies": {
     "@types/chai": "^4.2.8",
@@ -37,6 +50,7 @@
     "eslint-plugin-vue": "^6.1.2",
     "node-sass": "^4.12.0",
     "prettier": "^1.19.1",
+    "pug-plain-loader": "^1.0.0",
     "sass-loader": "^8.0.2",
     "typescript": "~3.7.5",
     "vue-template-compiler": "^2.6.11"

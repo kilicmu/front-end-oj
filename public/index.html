@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <!-- <link rel="icon" href="<%= BASE_URL %>favicon.ico"> -->
+  <link href="~@/css/base.css">
+  <title>OJ</title>
+  <script type="text/javascript">
+    ~function anonymous() {
+      let computedREM = () => {
+        let winWidth = document.documentElement.clientWidth,
+          desWidth = 1300;
+        if (winWidth <= 1300) {
+          document.documentElement.style.fontSize = '16px';
+          return;
+        }
+        document.documentElement.style.fontSize = winWidth / desWidth * 16 + 'px';
+      }
+      computedREM();
+      window.addEventListener('resize', computedREM);
+    }()
+  </script>
+</head>
+
+<body>
+  <!-- <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+    </noscript> -->
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
 </html>

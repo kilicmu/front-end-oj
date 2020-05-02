@@ -1,0 +1,39 @@
+@mixin switch-animation {
+
+  .v-enter,
+  .v-leave-to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  .v-enter-active,
+  .v-leave-active {
+    transition: all 0.2s ease-out;
+  }
+}
+
+@mixin switch-list-animation {
+
+  .switch-enter .switch-leave-to {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  .switch-enter-active,
+  .switch-leave-active {
+    transition: all 0.2s ease;
+  }
+}
+
+@mixin flash-animation {
+
+  .flash-enter-active,
+  .flash-leave-active {
+    transition: opacity .5s;
+  }
+
+  .flash-enter,
+  .flash-leave-to {
+    opacity: 0;
+  }
+}
