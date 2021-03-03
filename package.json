@@ -18,7 +18,7 @@
     "monaco-editor": "^0.19.0",
     "monaco-editor-vue": "^1.0.9",
     "monaco-editor-webpack-plugin": "^1.8.1",
-    "pug": "^2.0.4",
+    "pug": "^3.0.1",
     "reset.css": "^2.0.2",
     "view-design": "^4.0.0",
     "vue": "^2.6.11",
